@@ -2,7 +2,6 @@ package Task1.repository;
 
 
 import Task1.Models.Order;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -18,6 +17,6 @@ public class OrderRepositoryImpl implements OrderRepository {
     @Override
     public void save(Order order) {
         database.put(order.getId(), order);
-        System.out.println("Репозиторій: Замовлення #" + order.getId() + " збережено.");
+        System.out.println("Order #" + order.getId() + " saved.");
     }
 }

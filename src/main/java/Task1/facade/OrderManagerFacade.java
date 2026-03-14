@@ -1,7 +1,7 @@
 package Task1.facade;
 
 import Task1.Models.Order;
-import Task1.processor.OrderProcessorTemplate; // Тепер використовуємо інтерфейс сервісу
+import Task1.processor.OrderProcessorTemplate;
 import Task1.repository.OrderService;
 import Task1.service.PaymentMethod;
 
@@ -15,7 +15,7 @@ public class OrderManagerFacade {
     }
 
     public void placeAndProcessOrder(Order order, PaymentMethod paymentMethod) {
-        orderService.createOrder(order); // Використовуємо сервіс
+        orderService.createOrder(order);
         processor.process(order, paymentMethod);
     }
 }

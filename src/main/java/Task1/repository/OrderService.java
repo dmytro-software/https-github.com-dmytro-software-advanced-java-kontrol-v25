@@ -14,7 +14,7 @@ public class OrderService {
         repository.save(order);
     }
 
-    public Optional<Order> findOrder(long id) {
-        return repository.findById(id);
-    }
+//    public Optional<Order> findOrder(long id) {
+//        return repository.findById(id);
+//    }
 }

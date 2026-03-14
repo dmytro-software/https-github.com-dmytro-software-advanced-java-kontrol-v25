@@ -12,7 +12,7 @@ public class Order {
 
     public Order(long id, List<OrderItem> items) {
         this.id = id;
-        this.items = new ArrayList<>(items); // defensive copy
+        this.items = new ArrayList<>(items);
         this.status = OrderStatus.NEW;
     }
 
@@ -21,7 +21,7 @@ public class Order {
     }
 
     public List<OrderItem> getItems() {
-        return new ArrayList<>(items); // defensive copy
+        return new ArrayList<>(items);
     }
 
     public OrderStatus getStatus() {
